@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+
+}
+
+body {
+    background-color: #f3f3f3;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+#header,
+footer,
+#nav,
+main,
+.arriba,
+.abajo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f3f3f3;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    min-height: 100vh;
+
+}
+
+/***  barra de navegacion  -  header  ***/
+#nav {
+    background: #222;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.leftNavUp {
+    width: 49%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.leftNavUpLogo {
+    margin: 2.5rem 0 2.5rem 2.5rem;
+
+}
+
+.leftNavUpH3 {
+    margin: 2.5rem 0 2.5rem 1rem;
+
+}
+
+.leftNavUpLogo img {
+    width: 3.5rem
+}
+
+.leftNavUpH3 {
+    font-size: 2.5rem;
+}
+
+.rojo {
+    color: #d01418
+}
+
+.blanco {
+    color: white;
+}
+
+
+.rightNavUp {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.rightNavUp2 {
+    /*  carrito   */
+    width: 20%;
+    margin-left: 2rem;
+    text-align: center;
+    align-items: center;
+    margin-right: 3rem;
+
+
+}
+
+.rightNavUp1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+.rightNavUp a {
+    text-decoration: none;
+    padding: 0.4rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.rightNavUp ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+
+
+
+/***  productos destacados    ***/
+
+#sectionSlider {
+    width: 100%;
+    background-image: url(../img/img1.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 3.5rem;
+
+}
+
+.botonSlider {
+    width: 13.75rem;
+    padding: 1.5rem;
+    background: #d01418;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5625rem;
+    align-self: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+/**   MAIN    **/
+#sectionProduct {
+    /* productos destacados*/
+    width: 100%;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f3f3f3;
+}
+
+#sectionProductGallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+
+
+.cardProduct {
+    width: 16rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 0.5rem;
+    margin-bottom: 0.1rem;
+
+
+}
+
+.envio {
+    color: #7eaf30;
+}
+
+.cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 19rem;
+}
+
+.cardImg img {
+    height: 85%;
+    align-self: center;
+}
+
+.cardLine {
+    margin: 0.2rem 0rem;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.cardFooter {
+    height: 5rem;
+    line-height: 1.5rem;
+}
+
+
+/** productos estrella  */
+#sectionBanner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#sectionBannerGallery {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.sectionH2 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.estrellaIzq {
+    background-image: url(../img/banner1.png);
+    background-position: center;
+    background-size: cover;
+    width: 25rem !important;
+    height: 11rem;
+    position: relative;
+    border-radius: 0.5rem;
+
+
+}
+
+.estrellaDer {
+    background-image: url(../img/banner2.png);
+    background-position: center;
+    background-size: cover;
+    width: 25rem !important;
+    height: 11rem;
+    position: relative;
+    border-radius: 0.5rem;
+
+}
+
+.h3Banner {
+    font-size: 1.5625rem;
+    color: #f3f3f3;
+    font-weight: 100;
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+}
+
+/***  footer    ***/
+
+footer {
+    background: #222;
+    display: flex;
+    flex-direction: column;
+
+    height: fit-content;
+
+}
+
+.arriba {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.abajo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding: 1rem 0rem;
+    background-color: #f3f3f3;
+    margin-bottom: -1.5rem;
+    width: 100%;
+}
+
+.footerIzq {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footerDer {
+    padding-bottom: 1.5rem;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.subFooterDer {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.subFooterDerh2 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-twitter {
+    color: #14aed0;
+
+
+
+}
+
+.fa-facebook {
+    color: #1476d0;
+
+
+}
+
+.fa-instagram {
+    color: #ce0cff;
+
+}
+
+/*  media queries  */
+
+
+/*   Small devices ( phones, less than 400px)    */
+@media only screen and (max-width : 450px) {
+
+    #sectionProductGallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*   Small devices (landscape phones, less than 768px)    */
+@media only screen and (max-width : 768px) {
+    .fa-bars {
+        visibility: visible;
+        color: white;
+        font-size: 3rem;
+        position: absolute;
+        right: 1rem;
+    }
+
+    .rightNavUp1 ul {
+        display: none;
+    }
+
+    .rightNavUp2 {
+        display: none;
+    }
+
+    .leftNavUpLogo {
+        margin: 2rem 0.5rem;
+
+    }
+
+    .leftNavUpH3 {
+        margin: 2.5rem 0;
+
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+
+
+/*   Large devices (desktops, less than 1200px)    */
+
+@media only screen and (max-width : 966px) {
+
+    /* Styles here */
+    #header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .leftNavUp,
+    .rightNavUp {
+        margin: auto;
+        padding: 0%;
+        width: 100%;
+        font-size: 0.5rem;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .arriba,
+    .abajo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    .fa-bars {
+        visibility: hidden;
+    }
+
+}
+
+/* mediaqueries para fontsize */
+/* Pantallas grandes*/
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+/*tablets grandes y small laptops */
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+/*tabletas mayores*/
+
+@media (max-width: 996px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/*tablets chicas*/
+
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* celus grandes */
+@media (max-width: 550px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* Celulares */
+
+@media (max-width: 450px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+/* Celulares extrasmall */
+
+@media (max-width: 300px) {
+    html {
+        font-size: 10px;
+    }
+    
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+
+}
+}
